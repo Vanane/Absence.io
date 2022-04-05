@@ -19,6 +19,8 @@ Workflows de saisie de demande d'abs
 	* iv bis) Refus par le DRH -> statut (statut wf 'REFUS_RH')
 * 8) Modification d'une demande refuser ou valider par le salarié (statut wf 'SAISIE')...
 
+Amélioration possible -> Timer entre chaque action (si pas d'action avant la date de début de l'absence alors non valide...)
+
 champs d'une absence : 
  - type d'absence (CONGE, FAMILLE, PARENT... LST_DEROULANTE)
  - statut de l'absence (pas sure) 
