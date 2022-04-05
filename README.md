@@ -15,8 +15,8 @@ Workflows de saisie de demande d'abs
 		* 6) Validation par le DRH -> statut (statut wf 'VALID_RH')
 		* 7) Refus par le DRH -> statut (statut wf 'REFUS_RH')
 * Choix par le RH :
-	* iii bis) OU validation le DRH -> statut (statut wf 'VALID_RH')
-	* iv bis) Refus par le DRH -> statut (statut wf 'REFUS_RH')
+	* 3. bis) OU validation le DRH -> statut (statut wf 'VALID_RH')
+	* 4. bis) Refus par le DRH -> statut (statut wf 'REFUS_RH')
 * 8) Modification d'une demande refuser ou valider par le salarié (statut wf 'SAISIE')...
 
 Amélioration possible -> Timer entre chaque action (si pas d'action avant la date de début de l'absence alors non valide...)
@@ -27,3 +27,10 @@ champs d'une absence :
  - commentaire (VARCHAR2) 
  - Date début (DATE)
  - Date fin (DATE) 
+
+
+
+## TODO
+
+- Pour les dates d'absences : proposer deux créneaux pour les absences de demi-journées
+
