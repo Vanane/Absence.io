@@ -1,8 +1,8 @@
 {
   "modelVersion" : "2.2",
-  "id" : "validerAbsenceMan",
-  "name" : "validerAbsenceMan",
-  "lastUpdate" : 1651071893475,
+  "id" : "validerAbsenceDRH",
+  "name" : "validerAbsenceDRH",
+  "lastUpdate" : 1651071892124,
   "rows" : [
     [
       {
@@ -11,7 +11,7 @@
           "xs" : 12
         },
         "propertyValues" : { },
-        "reference" : "adad9569-9f0b-458c-bc6b-77cf922ba5ee",
+        "reference" : "6eee5e50-17eb-4618-89a9-5bdbb9111d4c",
         "hasValidationError" : false,
         "id" : "pbContainer",
         "rows" : [
@@ -50,7 +50,7 @@
                   "value" : 12
                 }
               },
-              "reference" : "b38e245b-6ebd-4f55-a31d-4c97080ad916",
+              "reference" : "02f72c17-56d0-48a3-81b5-09c4c1271f2b",
               "hasValidationError" : false,
               "id" : "pbTitle",
               "description" : ""
@@ -98,7 +98,7 @@
                   "value" : 12
                 }
               },
-              "reference" : "f109d6ac-635f-4b2d-9f98-d8f5305bd36a",
+              "reference" : "c7181fc8-067a-444b-ae60-97474e59c226",
               "hasValidationError" : false,
               "id" : "pbText",
               "description" : ""
@@ -113,17 +113,8 @@
         "dimension" : {
           "xs" : 12
         },
-        "propertyValues" : {
-          "cssClasses" : {
-            "type" : "constant",
-            "value" : ""
-          },
-          "hidden" : {
-            "type" : "constant",
-            "value" : false
-          }
-        },
-        "reference" : "7385816e-dd08-4eed-a616-5fb79feaf6a7",
+        "propertyValues" : { },
+        "reference" : "20bc747e-86c3-49c4-b7dd-5297ff592e0c",
         "hasValidationError" : false,
         "id" : "pbFormContainer",
         "container" : {
@@ -132,7 +123,7 @@
             "xs" : 12
           },
           "propertyValues" : { },
-          "reference" : "c2f658b1-2836-49bf-90ef-e40e812ca33c",
+          "reference" : "9363b3ae-8257-4eb9-97b6-22cec5fbde89",
           "hasValidationError" : false,
           "id" : "pbContainer",
           "rows" : [
@@ -143,7 +134,7 @@
                   "md" : 12,
                   "sm" : 12,
                   "xs" : 12,
-                  "lg" : 6
+                  "lg" : 12
                 },
                 "propertyValues" : {
                   "hidden" : {
@@ -160,18 +151,18 @@
                   },
                   "text" : {
                     "type" : "interpolation",
-                    "value" : "Fiche d'absence"
+                    "value" : "Fiche Absence"
                   },
                   "alignment" : {
                     "type" : "constant",
-                    "value" : "center"
+                    "value" : "left"
                   },
                   "dimension" : {
                     "type" : "constant",
                     "value" : 12
                   }
                 },
-                "reference" : "d82cbb7d-694c-403b-bec4-939c36089bd9",
+                "reference" : "0ea9336d-b898-4aeb-9147-f7f1a8ac0e1d",
                 "hasValidationError" : false,
                 "id" : "pbTitle",
                 "description" : ""
@@ -188,8 +179,7 @@
                 },
                 "propertyValues" : {
                   "repeatedCollection" : {
-                    "type" : "variable",
-                    "value" : ""
+                    "type" : "variable"
                   },
                   "hidden" : {
                     "type" : "constant",
@@ -204,7 +194,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "86b89025-1438-4aa0-88a9-ecd516c06b01",
+                "reference" : "10ff65ff-bd65-4f6e-9ac0-df140bc436e3",
                 "hasValidationError" : false,
                 "id" : "pbContainer",
                 "rows" : [
@@ -212,10 +202,10 @@
                     {
                       "type" : "component",
                       "dimension" : {
-                        "md" : 12,
+                        "md" : 6,
                         "sm" : 12,
                         "xs" : 12,
-                        "lg" : 12
+                        "lg" : 6
                       },
                       "propertyValues" : {
                         "allowHtml" : {
@@ -263,7 +253,66 @@
                           "value" : true
                         }
                       },
-                      "reference" : "19640ef1-5924-4014-bdff-52ecd53bdf8b",
+                      "reference" : "79d37b6e-bf32-4fc6-b984-948686bd5c6b",
+                      "hasValidationError" : false,
+                      "id" : "pbText",
+                      "description" : ""
+                    },
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "md" : 6,
+                        "sm" : 12,
+                        "xs" : 12,
+                        "lg" : 6
+                      },
+                      "propertyValues" : {
+                        "allowHtml" : {
+                          "type" : "constant",
+                          "value" : true
+                        },
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "hidden" : {
+                          "type" : "expression",
+                          "value" : "!ficheAbsence.idManager"
+                        },
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Id Manager"
+                        },
+                        "text" : {
+                          "type" : "interpolation",
+                          "value" : "{{ficheAbsence.idManager}}"
+                        },
+                        "alignment" : {
+                          "type" : "constant",
+                          "value" : "left"
+                        },
+                        "dimension" : {
+                          "type" : "constant",
+                          "value" : 12
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 4
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
+                          "value" : true
+                        }
+                      },
+                      "reference" : "ecfbc50d-9b44-4669-bd10-14c0380b3223",
                       "hasValidationError" : false,
                       "id" : "pbText",
                       "description" : ""
@@ -324,7 +373,7 @@
                           "value" : true
                         }
                       },
-                      "reference" : "8dd7846c-b8a0-48ec-9a05-b6e1e18c1def",
+                      "reference" : "56e90596-d20c-4f58-8657-be43c8554a6e",
                       "hasValidationError" : false,
                       "id" : "pbText",
                       "description" : ""
@@ -371,21 +420,9 @@
                         "dimension" : {
                           "type" : "constant",
                           "value" : 12
-                        },
-                        "labelPosition" : {
-                          "type" : "constant",
-                          "value" : "top"
-                        },
-                        "labelWidth" : {
-                          "type" : "constant",
-                          "value" : 4
-                        },
-                        "allowHTML" : {
-                          "type" : "constant",
-                          "value" : true
                         }
                       },
-                      "reference" : "2b76c4c5-f4b2-4b8a-8737-a09ddef5d183",
+                      "reference" : "6ff3c18a-f90a-4800-b670-a193b4d0a757",
                       "hasValidationError" : false,
                       "id" : "pbText",
                       "description" : ""
@@ -444,7 +481,7 @@
                           "value" : true
                         }
                       },
-                      "reference" : "c236928d-116b-4550-80a1-48dc67debeba",
+                      "reference" : "7bb27e2a-5458-4680-bfc3-fc8481c56fd4",
                       "hasValidationError" : false,
                       "id" : "pbText",
                       "description" : ""
@@ -491,21 +528,9 @@
                         "dimension" : {
                           "type" : "constant",
                           "value" : 12
-                        },
-                        "labelPosition" : {
-                          "type" : "constant",
-                          "value" : "top"
-                        },
-                        "labelWidth" : {
-                          "type" : "constant",
-                          "value" : 4
-                        },
-                        "allowHTML" : {
-                          "type" : "constant",
-                          "value" : true
                         }
                       },
-                      "reference" : "98a0941c-bad8-4305-b827-940cf3019065",
+                      "reference" : "7b4bf167-7a3f-48e4-8965-925858529343",
                       "hasValidationError" : false,
                       "id" : "pbText",
                       "description" : ""
@@ -518,7 +543,7 @@
                         "xs" : 12,
                         "sm" : 12,
                         "md" : 6,
-                        "lg" : 8
+                        "lg" : 6
                       },
                       "propertyValues" : {
                         "cssClasses" : {
@@ -530,8 +555,8 @@
                           "value" : false
                         },
                         "disabled" : {
-                          "type" : "expression",
-                          "value" : "$form.$invalid"
+                          "type" : "constant",
+                          "value" : false
                         },
                         "label" : {
                           "type" : "interpolation",
@@ -598,7 +623,7 @@
                           "type" : "variable"
                         }
                       },
-                      "reference" : "f32445cb-ec32-47e0-8f54-f1ec016ad827",
+                      "reference" : "ac6cd080-18f9-492e-9750-d3e57b2c2a36",
                       "hasValidationError" : false,
                       "id" : "pbButton"
                     },
@@ -608,7 +633,7 @@
                         "xs" : 12,
                         "sm" : 12,
                         "md" : 6,
-                        "lg" : 4
+                        "lg" : 6
                       },
                       "propertyValues" : {
                         "cssClasses" : {
@@ -620,8 +645,8 @@
                           "value" : false
                         },
                         "disabled" : {
-                          "type" : "expression",
-                          "value" : "$form.$invalid"
+                          "type" : "constant",
+                          "value" : false
                         },
                         "label" : {
                           "type" : "interpolation",
@@ -688,7 +713,7 @@
                           "type" : "variable"
                         }
                       },
-                      "reference" : "bff87dd8-a94f-4fe4-a525-bf45eb9062d2",
+                      "reference" : "fff0d8e6-5018-4d17-989e-9d29efcc89b4",
                       "hasValidationError" : false,
                       "id" : "pbButton"
                     }
@@ -740,9 +765,17 @@
                   "dimension" : {
                     "type" : "constant",
                     "value" : 12
+                  },
+                  "labelPosition" : {
+                    "type" : "constant",
+                    "value" : "top"
+                  },
+                  "labelWidth" : {
+                    "type" : "constant",
+                    "value" : 4
                   }
                 },
-                "reference" : "0e4c557b-b031-4919-a2bc-0b73ddffad13",
+                "reference" : "f0e715be-4d39-4927-a538-e0f026b33755",
                 "hasValidationError" : false,
                 "id" : "pbText",
                 "description" : ""
@@ -755,14 +788,14 @@
   ],
   "assets" : [
     {
-      "id" : "272155dd-5f6f-4cce-893b-8b1f7167bed8",
+      "id" : "49af45c4-2abb-443b-a54b-a59ec9e23a16",
       "name" : "style.css",
       "type" : "css",
       "order" : 0,
       "external" : false
     },
     {
-      "id" : "86d3ee45-2f39-422e-b245-768cd6ee8c73",
+      "id" : "036b2758-8578-4807-a445-3982e596515e",
       "name" : "localization.json",
       "type" : "json",
       "order" : 0,
@@ -800,20 +833,6 @@
       ],
       "exposed" : false
     },
-    "formOutput" : {
-      "type" : "expression",
-      "value" : [
-        "if( $data.ficheAbsence ){",
-        "\treturn {",
-        "\t\t//map ficheAbsence variable to expected task contract input",
-        "\t\tficheAbsenceInput: {",
-        "\t\t\tetatTraitement: $data.ficheAbsence.etatTraitement !== undefined ? $data.ficheAbsence.etatTraitement : null",
-        "\t\t}",
-        "\t}",
-        "}"
-      ],
-      "exposed" : false
-    },
     "context" : {
       "type" : "url",
       "value" : [
@@ -828,26 +847,12 @@
       ],
       "exposed" : false
     },
-    "etatValid" : {
-      "type" : "constant",
-      "value" : [
-        "VALID_MAN"
-      ],
-      "exposed" : false
-    },
-    "etatRefus" : {
-      "type" : "constant",
-      "value" : [
-        "REFUS_MAN"
-      ],
-      "exposed" : false
-    },
     "formOutputAccept" : {
       "type" : "expression",
       "value" : [
         "return {",
         "\tficheAbsenceInput: {",
-        "\t\tetatTraitement: \"VALID_MAN\"",
+        "\t\tetatTraitement: \"VALID_DRH\"",
         "\t}",
         "}"
       ],
@@ -858,7 +863,7 @@
       "value" : [
         "return {",
         "\tficheAbsenceInput: {",
-        "\t\tetatTraitement: \"REFUS_MAN\"",
+        "\t\tetatTraitement: \"REFUS_DRH\"",
         "\t}",
         "}"
       ],
@@ -866,7 +871,7 @@
     }
   },
   "hasValidationError" : false,
-  "uuid" : "965dfc34-5214-43ac-9f5f-48f42af03009",
+  "uuid" : "28d0a3e9-bf07-4502-9724-0edc5154701e",
   "type" : "form",
   "description" : "Page generated with Bonita UI designer"
 }

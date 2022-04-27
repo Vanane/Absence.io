@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<organization:Organization xmlns:organization="http://documentation.bonitasoft.com/organization-xml-schema/1.1" name="MIAGECorp" description="Membres de MIAGECorp">
+  <customUserInfoDefinitions/>
+  <users>
+    <user userName="Batman">
+      <firstName>Bronce</firstName>
+      <lastName>Bwayne</lastName>
+      <title></title>
+      <jobTitle>Homme-chauve-souris</jobTitle>
+      <manager>Bwick</manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">Batman</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="Jombes">
+      <firstName>Imbiamba</firstName>
+      <lastName>Jombes</lastName>
+      <manager>Bwick</manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">Jombes</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="Bwick">
+      <firstName>Jone</firstName>
+      <lastName>Bwick</lastName>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">Bwick</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="Gratos">
+      <firstName>Jean-baptiste</firstName>
+      <lastName>Gratos</lastName>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">Gratos</password>
+      <customUserInfoValues/>
+    </user>
+  </users>
+  <roles>
+    <role name="Salarié">
+      <displayName>Salarié</displayName>
+    </role>
+    <role name="Manager">
+      <displayName>Manager</displayName>
+    </role>
+    <role name="DRH">
+      <displayName>DRH</displayName>
+    </role>
+  </roles>
+  <groups>
+    <group name="Salarié">
+      <displayName>Salarié</displayName>
+    </group>
+    <group name="Manager">
+      <displayName>Manager</displayName>
+    </group>
+    <group name="DRH">
+      <displayName>DRH</displayName>
+    </group>
+  </groups>
+  <memberships>
+    <membership>
+      <userName>Batman</userName>
+      <roleName>Salarié</roleName>
+      <groupName>Salarié</groupName>
+    </membership>
+    <membership>
+      <userName>Jombes</userName>
+      <roleName>Salarié</roleName>
+      <groupName>Salarié</groupName>
+    </membership>
+    <membership>
+      <userName>Bwick</userName>
+      <roleName>Manager</roleName>
+      <groupName>Manager</groupName>
+    </membership>
+    <membership>
+      <userName>Gratos</userName>
+      <roleName>DRH</roleName>
+      <groupName>DRH</groupName>
+    </membership>
+    <membership>
+      <userName>Bwick</userName>
+      <roleName>Salarié</roleName>
+      <groupName>Salarié</groupName>
+    </membership>
+  </memberships>
+</organization:Organization>

@@ -2,7 +2,7 @@
   "modelVersion" : "2.2",
   "id" : "saisieAbsence",
   "name" : "saisieAbsence",
-  "lastUpdate" : 1649149356717,
+  "lastUpdate" : 1649337964574,
   "rows" : [
     [
       {
@@ -95,6 +95,58 @@
                 "hasValidationError" : false,
                 "id" : "pbContainer",
                 "rows" : [
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "xs" : 12,
+                        "sm" : 12,
+                        "md" : 12,
+                        "lg" : 12
+                      },
+                      "propertyValues" : {
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : true
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Default label"
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 4
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
+                          "value" : true
+                        },
+                        "text" : {
+                          "type" : "interpolation",
+                          "value" : "{{ context.ficheAbsence.idManager }}"
+                        },
+                        "alignment" : {
+                          "type" : "constant",
+                          "value" : "left"
+                        }
+                      },
+                      "reference" : "55da8c99-f75e-4fc0-9cb7-51ddc23bfca8",
+                      "hasValidationError" : false,
+                      "id" : "pbText"
+                    }
+                  ],
                   [
                     {
                       "type" : "component",
